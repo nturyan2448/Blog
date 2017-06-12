@@ -1,0 +1,88 @@
+body {
+  /*text-align: center;*/
+  margin: 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+h2 {
+  font-size: 2em;
+  display: inline-block;
+  margin-top: 0.4em;
+  margin-bottom: 0.4em;
+}
+h5 {
+  display: inline-block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 10px;
+  margin-right: 10px;
+  align-content: right;
+}
+
+button {
+  background: darkmagenta;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 5px 10px 5px 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffa0ab;
+}
+
+button a {
+  color: floralwhite;
+  font-size: 1.3em;
+}
+
+.Header {
+  text-align: center
+}
+
+.Header nav {
+  margin-bottom: 25px;
+}
+
+.Post {
+  border: solid black 1pt;
+  padding: 10px 20px 10px 20px;
+  background-color: lightskyblue
+}
+
+span {
+  font-size: 0.6em;
+  color: gray;
+  font-family: monospace;
+}
+
+pre {
+  font-family: sans-serif;
+}
+
+.PostInput {
+  text-align: center;
+}
+
+.PostInput input{
+  display: block;
+  margin: 10px auto;
+  width: 250px;
+  padding: 5px;
+}
+
+.PostInput textarea{
+  display: block;
+  margin: 10px auto;
+  width: 250px;
+  padding: 5px;
+  resize: none;
+}

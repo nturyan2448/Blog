@@ -1,0 +1,26 @@
+{
+  "name": "blog",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "concurrently": "^3.4.0",
+    "isomorphic-fetch": "^2.2.1",
+    "mongoose": "^4.10.5",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-router-dom": "^4.1.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.7"
+  },
+  "proxy": "http://localhost:3001/",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "server": "node server.js"
+  }
+}
