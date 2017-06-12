@@ -7,8 +7,9 @@ app.use(bodyparser.json());
 
 //=============================//
 
-mongoose.connect('mongodb://localhost/blog');
- 
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/blog');
+console.log(`MONGODB_URI = ${process.env.MONGODB_URI}`)
+
 const db = mongoose.connection;
  
 db.on('error', function (err) {

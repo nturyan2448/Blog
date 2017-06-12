@@ -15,7 +15,8 @@ class PostList extends React.Component{
             .then(data => this.setState({data: data}))
             .catch(err => console.log(err));
 
-        console.log(process.env);
+        console.log(process.env.NODE_ENV);
+        console.log(`MONGODB_URI = ${process.env.MONGODB_URI}`)
     }
 
     render(){
