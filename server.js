@@ -60,8 +60,8 @@ app.put('/post/:postID',(req,res) => {
 })
 
 console.log(__dirname)
-// app.use(express.static(__dirname+'/build'))
-app.use(express.static(__dirname+'/public'))
+app.use(express.static(__dirname+'/build'))
+// app.use(express.static(__dirname+'/public'))
 // app.get('/', (req,res)=>{res.sendFile(__dirname+'/public/index.html')})
 
 const port = process.env.PORT || 3001;
