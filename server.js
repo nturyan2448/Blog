@@ -6,7 +6,7 @@ const app = express();
 app.use(bodyparser.json());
 
 //=============================//
-
+mongoose.Promise = global.Promise;
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/blog');
 console.log(`MONGODB_URI = ${process.env.MONGODB_URI}`)
 
