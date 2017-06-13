@@ -59,10 +59,10 @@ app.put('/post/:postID',(req,res) => {
     res.json({state: "SUCCESS"});
 })
 
-// console.log(__dirname)
-// app.use(express.static(__dirname+'/build'))
+console.log(__dirname)
+app.use(express.static(__dirname+'/build'))
 app.use(express.static(__dirname+'/public'))
-// app.get('/', (req,res)=>{res.sendFile(__dirname+'/build/index.html')})
+app.get('/', (req,res)=>{res.sendFile(__dirname+'/build/index.html')})
 
 const port = process.env.PORT || 3001;
 app.listen(port, ()=>{console.log(`listening on ${port}...`)});
